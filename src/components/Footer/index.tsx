@@ -104,7 +104,7 @@ const Footer = ({ t }: any) => {
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
                   <SvgIcon
-                    src="Uk.png"
+                    src="uk.png"
                     aria-label="homepage"
                     width="30px"
                     height="30px"

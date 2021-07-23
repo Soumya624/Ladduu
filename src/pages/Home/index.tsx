@@ -21,7 +21,7 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
+        icon="waving.svg"
         id="intro"
       />
       <MiddleBlock
@@ -41,6 +41,7 @@ const Home = () => {
         type="right"
         title={MissionContent.title}
         content={MissionContent.text}
+        button={MissionContent.button}
         icon="product-launch.svg"
         id="mission"
       />
@@ -48,7 +49,8 @@ const Home = () => {
         type="left"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
+        section={ProductContent.section}
+        icon="graphs.svg"
         id="product"
       />
       <Contact

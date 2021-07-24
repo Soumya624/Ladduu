@@ -58,6 +58,7 @@ const Home = () => {
         content={ContactContent.text}
         id="contact"
       />
+
     </Container>
   );
 };

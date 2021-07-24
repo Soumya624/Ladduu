@@ -5,8 +5,6 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-import { Carousel } from 'react-responsive-carousel';
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -60,17 +58,6 @@ const Home = () => {
         content={ContactContent.text}
         id="contact"
       />
-      <Carousel autoPlay={true} infiniteLoop={true}>
-                <div>
-                <img src={`/img/svg/cleaning.png`}  />
-                </div>
-                <div>
-                <img src={`/img/svg/drone.png`}  />
-                </div>
-                <div>
-                <img src={`/img/svg/drone2.png`}  />
-                </div>
-            </Carousel>
 
     </Container>
   );

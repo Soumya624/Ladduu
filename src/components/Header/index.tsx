@@ -4,6 +4,8 @@ import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
+import i18n from "i18next";
+import Select from 'react-select';
 import {
   HeaderSection,
   LogoContainer,
@@ -14,13 +16,36 @@ import {
   Label,
   Outline,
   Span,
+  LanguageSwitch,
+  LanguageSwitchContainer
 } from "./styles";
 
 const Header = ({ t }: any) => {
   const [visible, setVisibility] = useState(false);
 
+  
+
   const showDrawer = () => {
     setVisibility(!visible);
+  };
+
+  const options = [
+  { value: 'EN', label: <div > <SvgIcon
+  src="uk.png"
+  aria-label="homepage"
+  width="30px"
+  height="30px"
+/></div> },
+  { value: 'TEL', label: <div> <SvgIcon
+  src="India.png"
+  aria-label="homepage"
+  width="30px"
+  height="30px"
+/></div> }
+]
+
+  const handleChange = (language: string) => {
+    i18n.changeLanguage(language);
   };
 
   const onClose = () => {
@@ -53,6 +78,11 @@ const Header = ({ t }: any) => {
           <Span>
             <Button>{t("Login")}</Button>
           </Span>
+        </CustomNavLinkSmall>
+
+        <CustomNavLinkSmall >
+          Language
+        <Select options={options}   defaultValue={options[0]} />
         </CustomNavLinkSmall>
       </>
     );

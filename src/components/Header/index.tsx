@@ -81,6 +81,7 @@ const Header = ({ t }: any) => {
         </CustomNavLinkSmall>
 
         <CustomNavLinkSmall >
+          Language
         <Select options={options}   defaultValue={options[0]} />
         </CustomNavLinkSmall>
       </>

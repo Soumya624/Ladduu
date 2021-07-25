@@ -62,13 +62,13 @@ const Header = ({ t }: any) => {
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
+        <CustomNavLinkSmall onClick={(e) => {e.preventDefault(); window.location.href='/about';}}>
           <Span >{t("About")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
           <Span>{t("Services")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
+        <CustomNavLinkSmall onClick={(e) => {e.preventDefault(); window.location.href='/team';}}>
           <Span>{t("Team")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
@@ -80,7 +80,7 @@ const Header = ({ t }: any) => {
           </Span>
         </CustomNavLinkSmall>
 
-        <CustomNavLinkSmall >
+        <CustomNavLinkSmall style={{color:"white"}}>
           Language
         <Select options={options}   defaultValue={options[0]} />
         </CustomNavLinkSmall>
@@ -93,7 +93,7 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logonew.png" width="101px" height="101px" />
+            <SvgIcon src="logonew1.png" width="170px" height="60px" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />

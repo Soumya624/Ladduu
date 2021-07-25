@@ -65,7 +65,7 @@ const Footer = ({ t }: any) => {
               <Large to="/" left="true">
                 {t("Privacy")}
               </Large>
-              <Large left="true" to="/">
+              <Large left="true" to="/terms">
                 {t("Terms and Conditions")}
               </Large>
             </Col>

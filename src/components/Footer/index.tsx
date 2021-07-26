@@ -51,18 +51,21 @@ const Footer = ({ t }: any) => {
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Language style={{color:"#fcb001"}}>{t("Contact")}</Language>
+              <Language style={{ color: "#fcb001" }}>{t("Contact")}</Language>
               <Large to="/">{t("Tell us everything")}</Large>
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:support@ladduu.com" style={{textDecoration:"none"}}>
-                <Chat style={{color:"#fcb001"}}>{t(`Let's Chat`)}</Chat>
+              <a
+                href="https://web.whatsapp.com/"
+                style={{ textDecoration: "none" }}
+              >
+                <Chat style={{ color: "#fcb001" }}>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title style={{color:"#fcb001"}}>{t("Policy")}</Title>
-              <Large to="/" left="true">
+              <Title style={{ color: "#fcb001" }}>{t("Policy")}</Title>
+              <Large to="/privacy" left="true">
                 {t("Privacy")}
               </Large>
               <Large left="true" to="/terms">
@@ -77,18 +80,29 @@ const Footer = ({ t }: any) => {
               <Large left="true" to="/">
                 {t("Customer Support")}
               </Large>
+              {/* <NavLink to="/">
+              <LogoContainer>
+                <SvgIcon
+                  src="logonew1.png"
+                  aria-label="homepage"
+                  width="170px"
+                  height="60px"
+                />
+              </LogoContainer>
+            </NavLink> */}
             </Col>
           </Row>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
-              <Language style={{color:"#fcb001"}}>{t("Address")}</Language>
+              <Language style={{ color: "#fcb001" }}>{t("Address")}</Language>
               <Para>3-25 Gandi Bazar, Karamchedu</Para>
               <Para>Prakasam Dt. 523168</Para>
               <Para>Andhra Pradesh</Para>
+              <Para>Email: support@ladduu.com</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title style={{color:"#fcb001"}}>{t("Company")}</Title>
+              <Title style={{ color: "#fcb001" }}>{t("Company")}</Title>
               <Large left="true" to="/">
                 {t("About")}
               </Large>
@@ -100,7 +114,9 @@ const Footer = ({ t }: any) => {
               </Large>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang" style={{color:"#fcb001"}}>{t("Language")}</Label>
+              <Label htmlFor="select-lang" style={{ color: "#fcb001" }}>
+                {t("Language")}
+              </Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
                   <SvgIcon

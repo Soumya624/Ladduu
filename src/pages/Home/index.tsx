@@ -24,11 +24,26 @@ const Home = () => {
         icon="waving.svg"
         id="intro"
       />
-      <MiddleBlock
+      <br />
+      <h2 style={{ color: "#fcb001", textAlign: "center" }}>
+        Impact 1 Million
+        <br />
+        Rural Dwellers by
+        <br />
+        2022
+      </h2>
+      <p style={{ textAlign: "center" }}>
+        LADDUU is an organization committed to revolutionize how
+        <br />
+        people consume content, communicate thoughts and
+        <br />
+        transact for goods/services in a rural and semi-urban setup
+      </p>
+      {/* <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
-      />
+      /> */}
       <ContentBlock
         type="left"
         title={AboutContent.title}
@@ -58,7 +73,6 @@ const Home = () => {
         content={ContactContent.text}
         id="contact"
       />
-
     </Container>
   );
 };

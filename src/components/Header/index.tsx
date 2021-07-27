@@ -100,8 +100,8 @@ const Header = ({ t }: any) => {
     <HeaderSection>
       <Container>
         <Row justify="space-between">
-          <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logonew1.png" width="170px" height="60px" />
+          <LogoContainer to="/" aria-label="homepage" style={{marginTop:"2.2%"}}>
+            <SvgIcon src="logonew1.png" width="170px" height="60px"/>
           </LogoContainer>
           <NotHidden>
             <MenuItem />

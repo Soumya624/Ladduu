@@ -49,7 +49,7 @@ const Footer = ({ t }: any) => {
     <>
       <FooterSection>
         <Container>
-          <Row justify="space-between">
+          {/* <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language style={{ color: "#fcb001" }}>{t("Contact")}</Language>
               <Large to="/">{t("Tell us everything")}</Large>
@@ -80,43 +80,26 @@ const Footer = ({ t }: any) => {
               <Large left="true" to="/">
                 {t("Customer Support")}
               </Large>
-              {/* <NavLink to="/">
-              <LogoContainer>
-                <SvgIcon
-                  src="logonew1.png"
-                  aria-label="homepage"
-                  width="170px"
-                  height="60px"
-                />
-              </LogoContainer>
-            </NavLink> */}
+              
             </Col>
-          </Row>
+          </Row> */}
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Empty />
               <Language style={{ color: "#fcb001" }}>{t("Address")}</Language>
               <Para>3-25 Gandi Bazar, Karamchedu</Para>
               <Para>Prakasam Dt. 523168</Para>
               <Para>Andhra Pradesh</Para>
               <Para>Email: support@ladduu.com</Para>
+              <Para>Phone: +919490780799</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title style={{ color: "#fcb001" }}>{t("Company")}</Title>
-              <Large left="true" to="/">
-                {t("About")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Services")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Team")}
-              </Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang" style={{ color: "#fcb001" }}>
-                {t("Language")}
-              </Label>
+              <Title style={{ color: "#fcb001" }}>{t("Policy")}</Title>
+              <a href="/privacy" style={{color: "#442e70", fontWeight:"normal"}}>
+                {t("Privacy")}
+              </a><br/>
+              <a href="/terms" style={{color: "#442e70"}}>
+                {t("Terms and Conditions")}
+              </a><br/><br/>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
                   <SvgIcon
@@ -136,51 +119,23 @@ const Footer = ({ t }: any) => {
                 </LanguageSwitch>
               </LanguageSwitchContainer>
             </Col>
+            <Col lg={6} md={6} sm={12} xs={12}>
+            <LogoContainer style={{marginTop:"2px"}}>
+                <SvgIcon
+                  src="logonew.png"
+                  aria-label="homepage"
+                  width="130px"
+                  height="130px"
+                />
+              </LogoContainer>
+            </Col>
           </Row>
         </Container>
       </FooterSection>
       <Extra>
         <Container border={true}>
-          <Row
-            justify="space-between"
-            align="middle"
-            style={{ paddingTop: "3rem" }}
-          >
-            <NavLink to="/">
-              <LogoContainer>
-                <SvgIcon
-                  src="logonew.png"
-                  aria-label="homepage"
-                  width="101px"
-                  height="101px"
-                />
-              </LogoContainer>
-            </NavLink>
-            <FooterContainer>
-              {/* <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="github.svg"
-              />
-              <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
-              />
-              <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
-              />
-              <SocialLink
-                href="https://medium.com/@lashakakabadze/"
-                src="medium.svg"
-              />
-              <a href="https://www.buymeacoffee.com/adrinlol">
-                <img
-                  src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
-                  alt="Buy me a pizza"
-                />
-              </a> */}
-            </FooterContainer>
-          </Row>
+          <br/>
+          <p style={{textAlign:"center", fontSize:"15px"}}>Copyright &#169; 2021 Ladduu</p>
         </Container>
       </Extra>
     </>

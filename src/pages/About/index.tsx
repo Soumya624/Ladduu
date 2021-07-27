@@ -48,7 +48,8 @@ const About = () => {
           <SvgIcon src="graphs.svg" width="100%" height="100%" />
         </Col>
         <Col lg={11} md={11} sm={12} xs={24}>
-          <p style={{ textTransform: "capitalize" }}>
+          <p style={{ textTransform: "capitalize"}}>
+            <br/>
             We aim to empower and enable the most populous strata of the Indian
             society (rural and semi-urban dwellers) to make informed decisions
             using our 360-view database, communicate ideas and establish

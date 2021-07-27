@@ -65,7 +65,15 @@ const Header = ({ t }: any) => {
         <CustomNavLinkSmall onClick={(e) => {e.preventDefault(); window.location.href='/about';}}>
           <Span >{t("About")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
+        <CustomNavLinkSmall onClick={(e) => {e.preventDefault(); 
+          if(window.location.pathname==='/')
+          {
+            scrollTo("about");
+          }
+          else
+          {
+            window.location.href='/';
+          }}}>
           <Span>{t("Services")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={(e) => {e.preventDefault(); window.location.href='/team';}}>

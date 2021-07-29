@@ -81,7 +81,15 @@ const Header = ({ t }: any) => {
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+          onClick={(e) => {e.preventDefault(); 
+          if(window.location.pathname==='/')
+          {
+            scrollTo("contact");
+          }
+          else
+          {
+            window.location.href='/';
+          }}}
         >
           <Span>
             <Button>{t("Login")}</Button>

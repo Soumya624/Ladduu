@@ -4,11 +4,13 @@
   "color": "#fcb001",
   "button": [
     {
-      "title": "Explore"
+      "title": "Explore",
+      "url": "/about"
     },
     {
-      "title": "Learn more",
-      "color": "#fff"
+      "title": "Contact",
+      "color": "#fff",
+      "url": null
     }
   ]
 }

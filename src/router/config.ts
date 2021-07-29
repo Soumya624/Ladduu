@@ -10,9 +10,19 @@ const routes = [
     component: "About",
   },
   {
-    path: ["/services"],
+    path: ["/village"],
     exact: true,
-    component: "Services",
+    component: "Village",
+  },
+  {
+    path: ["/sanitation"],
+    exact: true,
+    component: "Sanitation",
+  },
+  {
+    path: ["/drone"],
+    exact: true,
+    component: "Drone",
   },
   {
     path: ["/team"],

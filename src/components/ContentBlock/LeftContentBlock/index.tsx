@@ -40,6 +40,7 @@ const LeftContentBlock = ({
                           <SvgIcon src={item.icon} width="60px" height="60px" />
                           <MinTitle>{t(item.title)}</MinTitle>
                           <MinPara>{t(item.content)}</MinPara>
+                          <MinPara><a href={t(item.href)}>Learn More</a></MinPara>
                         </Col>
                       );
                     })}

@@ -5,12 +5,14 @@
     {
       "title": "Feature 1",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "icon": "notes.svg"
+      "icon": "notes.svg",
+      "href": "/sanitation"
     },
     {
       "title": "Feature 2",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "icon": "notes.svg"
+      "icon": "notes.svg",
+      "href": "/sanitation"
     }
   ]
 }

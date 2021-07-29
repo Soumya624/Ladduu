@@ -31,7 +31,7 @@ const RightBlock = ({
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6 style={{color:"#fcb001"}}>{t(title)}</h6>
+              <h6 style={{ color: "#fcb001" }}>{t(title)}</h6>
               <Content>{t(content)}</Content>
               <ButtonWrapper>
                 {typeof button === "object" &&
@@ -41,7 +41,13 @@ const RightBlock = ({
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        onClick={() => scrollTo("contact")}
+                        onClick={() => {
+                          if (item.url !== null) {
+                            window.location.href = item.url;
+                          } else {
+                            scrollTo("contact");
+                          }
+                        }}
                       >
                         {t(item.title)}
                       </Button>

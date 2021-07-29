@@ -83,7 +83,17 @@ const Footer = ({ t }: any) => {
               
             </Col>
           </Row> */}
-          <Row justify="space-between">
+          <Row justify="space-between" style={{alignItems:"center"}}>
+          <Col lg={8} md={8} sm={12} xs={12}  style={{alignItems:"center"}}>
+            <LogoContainer style={{marginTop:"2px"}}>
+                <SvgIcon
+                  src="logonew.png"
+                  aria-label="homepage"
+                  width="130px"
+                  height="130px"
+                />
+              </LogoContainer>
+            </Col>
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language style={{ color: "#fcb001" }}>{t("Address")}</Language>
               <Para>3-25 Gandi Bazar, Karamchedu</Para>
@@ -92,7 +102,7 @@ const Footer = ({ t }: any) => {
               <Para>Email: support@ladduu.com</Para>
               <Para>Phone: +919490780799</Para>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+            <Col lg={6} md={6} sm={12} xs={12}>
               <Title style={{ color: "#fcb001" }}>{t("Policy")}</Title>
               <a href="/privacy" style={{color: "#442e70", fontWeight:"normal"}}>
                 {t("Privacy")}
@@ -118,16 +128,6 @@ const Footer = ({ t }: any) => {
                   />
                 </LanguageSwitch>
               </LanguageSwitchContainer>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-            <LogoContainer style={{marginTop:"2px"}}>
-                <SvgIcon
-                  src="logonew.png"
-                  aria-label="homepage"
-                  width="130px"
-                  height="130px"
-                />
-              </LogoContainer>
             </Col>
           </Row>
         </Container>

@@ -21,7 +21,7 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="waving.svg"
+        icon="Sanitation1.png"
         id="intro"
       />
       <br />
@@ -49,7 +49,7 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="Village.png"
         id="about"
       />
       <ContentBlock
@@ -57,7 +57,7 @@ const Home = () => {
         title={MissionContent.title}
         content={MissionContent.text}
         button={MissionContent.button}
-        icon="product-launch.svg"
+        icon="drone.png"
         id="mission"
       />
       <ContentBlock
@@ -65,7 +65,7 @@ const Home = () => {
         title={ProductContent.title}
         content={ProductContent.text}
         section={ProductContent.section}
-        icon="graphs.svg"
+        icon="Sanitation2.png"
         id="product"
       />
       <Contact

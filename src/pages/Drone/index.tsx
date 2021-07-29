@@ -45,7 +45,7 @@ const Drone = () => {
       <br />
       <Row justify="space-between" align="middle">
         <Col lg={11} md={11} sm={12} xs={24}>
-          <SvgIcon src="graphs.svg" width="100%" height="100%" />
+          <SvgIcon src="drone.png" width="100%" height="100%" />
         </Col>
         <Col lg={11} md={11} sm={12} xs={24}>
           <p style={{ textTransform: "capitalize" }}>

@@ -84,7 +84,7 @@ const Footer = ({ t }: any) => {
             </Col>
           </Row> */}
           <Row justify="space-between" style={{alignItems:"center"}}>
-          <Col lg={8} md={8} sm={12} xs={12}  style={{alignItems:"center"}}>
+          <Col lg={8} md={8} sm={24} xs={24}  style={{alignItems:"center"}}>
             <LogoContainer style={{marginTop:"2px"}}>
                 <SvgIcon
                   src="logonew.png"
@@ -94,15 +94,15 @@ const Footer = ({ t }: any) => {
                 />
               </LogoContainer>
             </Col>
-            <Col lg={10} md={10} sm={12} xs={12}>
+            <Col lg={10} md={10} sm={24} xs={24}>
               <Language style={{ color: "#fcb001" }}>{t("Address")}</Language>
               <Para>3-25 Gandi Bazar, Karamchedu</Para>
               <Para>Prakasam Dt. 523168</Para>
               <Para>Andhra Pradesh</Para>
-              <Para>Email: support@ladduu.com</Para>
-              <Para>Phone: +919490780799</Para>
+              <Para>Email: <a href="mailto:support@ladduu.com" style={{color: "#442e70", fontWeight:"normal", fontFamily:"sans-serif"}}>support@ladduu.com</a></Para>
+              <Para>Phone: <a href="tel:9490780799" style={{color: "#442e70", fontWeight:"normal", fontFamily:"sans-serif"}}>+91-9490780799</a></Para>
             </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
+            <Col lg={6} md={6} sm={24} xs={24}>
               <Title style={{ color: "#fcb001" }}>{t("Policy")}</Title>
               <a href="/privacy" style={{color: "#442e70", fontWeight:"normal"}}>
                 {t("Privacy")}

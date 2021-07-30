@@ -92,7 +92,7 @@ const Header = ({ t }: any) => {
           }}}
         >
           <Span>
-            <Button>{t("Login")}</Button>
+            <Button>{t("Contact")}</Button>
           </Span>
         </CustomNavLinkSmall>
 

@@ -82,7 +82,7 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <SvgIcon src="p3.png" width="50%" height="50%" />
+                <img src="y1.jpg" alt="" style={{borderRadius:"50%", width:"50%"}}/>
                 <br />
                 <br />
                 <p
@@ -142,7 +142,7 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <SvgIcon src="p3.png" width="50%" height="50%" />
+                <img src="y2.jpg" alt="" style={{borderRadius:"50%", width:"50%"}}/>
                 <br />
                 <br />
                 <p
@@ -200,7 +200,7 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <SvgIcon src="p3.png" width="50%" height="50%" />
+                <img src="y3.png" alt="" style={{borderRadius:"50%", width:"50%"}}/>
                 <br />
                 <br />
                 <p
@@ -281,7 +281,7 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <SvgIcon src="p3.png" width="50%" height="50%" />
+                <img src="y4.png" alt="" style={{borderRadius:"50%", width:"50%"}}/>
                 <br />
                 <br />
                 <p
@@ -335,7 +335,7 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <SvgIcon src="p3.png" width="50%" height="50%" />
+                <img src="y5.png" alt="" style={{borderRadius:"50%", width:"50%"}}/>
                 <br />
                 <br />
                 <p
@@ -395,7 +395,7 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <SvgIcon src="p3.png" width="50%" height="50%" />
+                <img src="y6.png" alt="" style={{borderRadius:"50%", width:"50%"}}/>
                 <br />
                 <br />
                 <p

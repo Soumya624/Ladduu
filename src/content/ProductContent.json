@@ -1,16 +1,16 @@
 {
-  "title": "Sanitation Service",
-  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  "title": "Rural-Tech",
+  "text": "Ladduu provides the best price package for cleaning and disinfecting your Home or Office Space. We are bringing hospital level disinfection services in your area to your doorstep",
   "section": [
     {
-      "title": "Feature 1",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "title": "Drone As a Service",
+      "content": "Rent drones for cost-effective agriculture",
       "icon": "notes.svg",
-      "href": "/sanitation"
+      "href": "/drone"
     },
     {
-      "title": "Feature 2",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "title": "Sanitization Service",
+      "content": "Best price package for cleaning and disinfecting your Home or Office Space",
       "icon": "notes.svg",
       "href": "/sanitation"
     }

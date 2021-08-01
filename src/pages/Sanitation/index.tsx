@@ -50,10 +50,7 @@ const Sanitation = () => {
         <Col lg={11} md={11} sm={12} xs={24}>
           <p style={{ textTransform: "capitalize" }}>
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
+            Ladduu provides the best price package for cleaning and disinfecting your Home or Office Space. We are bringing hospital level disinfection services in your area to your doorstep
           </p>
         </Col>
       </Row>
@@ -63,17 +60,11 @@ const Sanitation = () => {
       <br />
       <br />
       <br />
-      <h2 style={{ color: "#fcb001", textAlign: "center" }}>
-        The Standard Lorem
-        <br />
-        Ipsum Passage
+      <h2 style={{ color: "#fcb001", textAlign: "center", textTransform:"capitalize" }}>
+      Our goal is to keep<br/>your home/office safe
       </h2>
       <p style={{ textAlign: "center" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        <br />
-        sed do eiusmod tempor incididunt ut labore et dolore
-        <br />
-        magna aliqua
+      Our goal is to keep your home/office safe from coronavirus and other germs by using VHA certified disinfectant chemicals. Our Sanitization experts will arrive at your doorstep at your scheduled time in fully dressed PPE kits equipped with necessary gear to make your experience hassle free and seamless.
       </p>
       <br />
       <br />
@@ -96,12 +87,9 @@ const Sanitation = () => {
                   fontSize: "25px",
                 }}
               >
-                Lorem Ipsum
+                Main Services
               </p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo
+              Our experts will use a combination of spraying pump and manual cleaning best suited for the surface. Our products have no ill effects and are safe for people with lung issues.
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
@@ -124,12 +112,9 @@ const Sanitation = () => {
                   fontSize: "25px",
                 }}
               >
-                Lorem Ipsum
+                Fumigation Services
               </p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo
+              Fogging and cleaning the air that guarantees 99.99% pathogen free surfaces and air. We recommend this service for covid recovered individual's homes and offices.
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
@@ -149,14 +134,13 @@ const Sanitation = () => {
                   color: "#fcb001",
                   textAlign: "center",
                   fontSize: "25px",
+                  marginBottom:"10px"
                 }}
               >
-                Lorem Ipsum
+                Commercial Sanitization Services
               </p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo
+              Services Available for<br/>
+              Office Spaces | Function Halls | Hospitals | Panchayats | Stores/Shops
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
@@ -176,14 +160,13 @@ const Sanitation = () => {
                   color: "#fcb001",
                   textAlign: "center",
                   fontSize: "25px",
+                  marginBottom:"10px"
                 }}
               >
-                Lorem Ipsum
+                Residential Sanitization Services
               </p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo
+              Services Available for<br/>
+              Apartments | Independent homes | Clubhouses | Common areas/Cellars
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>

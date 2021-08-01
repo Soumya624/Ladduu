@@ -1,18 +1,21 @@
 {
-  "title": "Virtual Village",
-  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  "title": "SerWah - 360⁰ Information Cloud",
+  "text": "We aim to empower and enable the most populous strata of the Indian society (rural & semi-urban dwellers) to make informed decisions!",
   "section": [
     {
       "title": "Feature 1",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "icon": "notes.svg",
-      "href": "/village"
+      "content": "Retail stores and real-time availability of products",
+      "icon": "notes.svg"
     },
     {
       "title": "Feature 2",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "icon": "notes.svg",
-      "href": "/village"
+      "content": "Expert service technicians and local vendors",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Feature 3",
+      "content": "Integrated healthcare providers",
+      "icon": "notes.svg"
     }
   ]
 }

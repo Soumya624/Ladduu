@@ -94,7 +94,7 @@ const Footer = ({ t }: any) => {
                 />
               </LogoContainer>
             </Col>
-            <Col lg={10} md={10} sm={24} xs={24}>
+            <Col lg={10} md={10} sm={24} xs={24} style={{alignItems:"center"}}>
               <Language style={{ color: "#fcb001" }}>{t("Address")}</Language>
               <Para>3-25 Gandi Bazar, Karamchedu</Para>
               <Para>Prakasam Dt. 523168</Para>
@@ -102,7 +102,7 @@ const Footer = ({ t }: any) => {
               <Para>Email: <a href="mailto:support@ladduu.com" style={{color: "#442e70", fontWeight:"normal", fontFamily:"sans-serif"}}>support@ladduu.com</a></Para>
               <Para>Phone: <a href="tel:9490780799" style={{color: "#442e70", fontWeight:"normal", fontFamily:"sans-serif"}}>+91-9490780799</a></Para>
             </Col>
-            <Col lg={6} md={6} sm={24} xs={24}>
+            <Col lg={6} md={6} sm={24} xs={24} style={{alignItems:"center"}}>
               <Title style={{ color: "#fcb001" }}>{t("Policy")}</Title>
               <a href="/privacy" style={{color: "#442e70", fontWeight:"normal"}}>
                 {t("Privacy")}

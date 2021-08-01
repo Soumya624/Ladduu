@@ -1,11 +1,11 @@
 {
   "title": "Welcome to Ladduu!",
-  "text": "Ladduu provides the best price package for cleaning and disinfecting your Home or Office Space. We are bringing hospital level disinfection services in your area to your doorstep",
+  "text": "LADDUU is an organization committed to revolutionize how people consume content, communicate thoughts and transact for goods/services in a rural and semi-urban setup. Presenting the first Virtual Village - Data, Trade and Community - all in one place!",
   "color": "#fcb001",
   "button": [
     {
       "title": "Explore",
-      "url": "/about"
+      "url": "about"
     },
     {
       "title": "Contact",

@@ -9,6 +9,9 @@ import {
   Content,
   ContentWrapper,
   ButtonWrapper,
+  ServiceWrapper,
+  MinPara,
+  MinTitle,
 } from "./styles";
 
 const RightBlock = ({
@@ -17,6 +20,7 @@ const RightBlock = ({
   button,
   icon,
   t,
+  section,
   id,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
@@ -33,6 +37,21 @@ const RightBlock = ({
             <ContentWrapper>
               <h6 style={{ color: "#fcb001" }}>{t(title)}</h6>
               <Content>{t(content)}</Content>
+              <ServiceWrapper>
+                <Row justify="space-between">
+                  {typeof section === "object" &&
+                    section.map((item: any, id: number) => {
+                      return (
+                        <Col key={id} span={11}>
+                          <SvgIcon src={item.icon} width="60px" height="60px" />
+                          <MinTitle>{t(item.title)}</MinTitle>
+                          <MinPara>{t(item.content)}</MinPara>
+                          <MinPara><a href={t(item.href)}>Learn More</a></MinPara>
+                        </Col>
+                      );
+                    })}
+                </Row>
+              </ServiceWrapper>
               <ButtonWrapper>
                 {typeof button === "object" &&
                   button.map((item: any, id: number) => {
@@ -43,7 +62,7 @@ const RightBlock = ({
                         fixedWidth={true}
                         onClick={() => {
                           if (item.url !== null) {
-                            window.location.href = item.url;
+                            scrollTo("about");
                           } else {
                             scrollTo("contact");
                           }

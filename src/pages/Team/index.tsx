@@ -56,11 +56,7 @@ const Team = () => {
         <Col lg={11} md={11} sm={12} xs={24}>
           <p style={{ textTransform: "capitalize" }}>
             <br />
-            Goal of our team is to keep your home/office safe from coronavirus
-            and other germs by using VHA certified disinfectant chemicals. Our
-            Sanitization experts will arrive at your doorstep at your scheduled
-            time in fully dressed PPE kits equipped with necessary gear to make
-            your experience hassle free and seamless.
+            We are a bunch of free spirited professionals inspired by the untapped potential of rural markets and committed to empowering the underrepresented through our common love and belief in technology.
           </p>
         </Col>
       </Row>
@@ -124,6 +120,7 @@ const Team = () => {
                       2020-2021. Radha is an avid reader, enjoys gardening and
                       designing spaces in her spare time.
                     </p>
+                    <a href="google.com"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
                   </div>
                 </Modal>
               </CardBody>
@@ -182,6 +179,7 @@ const Team = () => {
                       scanty access to resources in under-developed sections of
                       society.
                     </p>
+                    <a href="google.com"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
                   </div>
                 </Modal>
               </CardBody>
@@ -261,6 +259,7 @@ const Team = () => {
                       to design and setup state of the art engine manufacturing
                       plant in Kolhapur, Maharashtra.
                     </p>
+                    <a href="google.com"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
                   </div>
                 </Modal>
               </CardBody>
@@ -317,6 +316,7 @@ const Team = () => {
                       solutions for coding problems are his biggest stress
                       busters. Currently residing in Virginia, USA.
                     </p>
+                    <a href="google.com"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
                   </div>
                 </Modal>
               </CardBody>
@@ -377,6 +377,7 @@ const Team = () => {
                       can leverage her expertise to address the need of the hour
                       in the rural healthcare domain.
                     </p>
+                    <a href="google.com"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
                   </div>
                 </Modal>
               </CardBody>
@@ -440,6 +441,7 @@ const Team = () => {
                       sports like football, badminton & cricket. He is part of
                       Samvidhan, a charitable organization.
                     </p>
+                    <a href="google.com"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
                   </div>
                 </Modal>
               </CardBody>

@@ -21,24 +21,20 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="Sanitation1.png"
+        icon="Village.png"
         id="intro"
       />
       <br />
       <h2 style={{ color: "#fcb001", textAlign: "center" }}>
         Impact 1 Million
         <br />
-        Rural Dwellers by
-        <br />
-        2022
+        Rural Dwellers by 2022
       </h2>
-      <p style={{ textAlign: "center" }}>
-        LADDUU is an organization committed to revolutionize how
-        <br />
-        people consume content, communicate thoughts and
-        <br />
-        transact for goods/services in a rural and semi-urban setup
-      </p>
+        <p style={{textAlign:"center", fontSize:"20px", color:"#2b3379"}}>
+          Empower small entrepreneurs to expand markets<br/>
+          Mechanize farm procedures to reduce cost of production in agriculture<br/>
+          Digitize local information to build inclusive and future-ready communities
+        </p>
       {/* <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
@@ -49,19 +45,19 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="Village.png"
+        icon="village.png"
         id="about"
       />
-      <ContentBlock
+      {/* <ContentBlock
         type="right"
         title={MissionContent.title}
         content={MissionContent.text}
         button={MissionContent.button}
         icon="drone.png"
         id="mission"
-      />
+      /> */}
       <ContentBlock
-        type="left"
+        type="right"
         title={ProductContent.title}
         content={ProductContent.text}
         section={ProductContent.section}

@@ -3,17 +3,17 @@
   "text": "We aim to empower and enable the most populous strata of the Indian society (rural & semi-urban dwellers) to make informed decisions!",
   "section": [
     {
-      "title": "Feature 1",
+      "title": "Retail",
       "content": "Retail stores and real-time availability of products",
       "icon": "notes.svg"
     },
     {
-      "title": "Feature 2",
+      "title": "Service Provider",
       "content": "Expert service technicians and local vendors",
       "icon": "notes.svg"
     },
     {
-      "title": "Feature 3",
+      "title": "Healthcare",
       "content": "Integrated healthcare providers",
       "icon": "notes.svg"
     }

@@ -50,10 +50,7 @@ const Village = () => {
         <Col lg={11} md={11} sm={12} xs={24}>
           <p style={{ textTransform: "capitalize" }}>
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
+              Technology penetration isn’t as rampant in rural and semi-urban areas due to limited infrastructure, language barriers and other cultural differences. We, at Ladduu want to break those barriers and make lives of rural communities simpler by leveraging technology and facilitating scalable operations!
           </p>
         </Col>
       </Row>
@@ -63,17 +60,11 @@ const Village = () => {
       <br />
       <br />
       <br />
-      <h2 style={{ color: "#fcb001", textAlign: "center" }}>
-        The Standard Lorem
-        <br />
-        Ipsum Passage
+      <h2 style={{ color: "#fcb001", textAlign: "center", textTransform:"capitalize" }}>
+        make informed decisions using<br/>our 360-view platform
       </h2>
       <p style={{ textAlign: "center" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        <br />
-        sed do eiusmod tempor incididunt ut labore et dolore
-        <br />
-        magna aliqua
+      We aim to empower and enable the most populous strata of the Indian society (rural & semi-urban dwellers) to make informed decisions using our 360-view platform, communicate ideas and establish connections via our<br/>user-friendly community and transact digitally for their goods and services on our dynamic marketplace!
       </p>
       <br />
       <br />
@@ -96,12 +87,9 @@ const Village = () => {
                   fontSize: "25px",
                 }}
               >
-                Lorem Ipsum
+                Retail
               </p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo
+              Information about local stores with real-time availability of products
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
@@ -124,12 +112,9 @@ const Village = () => {
                   fontSize: "25px",
                 }}
               >
-                Lorem Ipsum
+                Service Providers
               </p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo
+              Information about technicians like Electricians, Plumbers, Engineers etc.
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
@@ -151,12 +136,9 @@ const Village = () => {
                   fontSize: "25px",
                 }}
               >
-                Lorem Ipsum
+                Healthcare
               </p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo
+              Information about local Healthcare Providers like clinics, hospitals, doctors etc.
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
@@ -178,12 +160,9 @@ const Village = () => {
                   fontSize: "25px",
                 }}
               >
-                Lorem Ipsum
+                Government
               </p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo
+              Information about Employees at local Government bodies like Panchayats
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
@@ -205,12 +184,9 @@ const Village = () => {
                   fontSize: "25px",
                 }}
               >
-                Lorem Ipsum
+                Food Sellers
               </p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo
+              Information about local food vendors who sell pickles, confectionery etc.
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>

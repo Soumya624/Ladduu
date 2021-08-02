@@ -50,10 +50,7 @@ const Drone = () => {
         <Col lg={11} md={11} sm={12} xs={24}>
           <p style={{ textTransform: "capitalize" }}>
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
+            Our goal is to keep your home/office safe from coronavirus and other germs by using VHA certified disinfectant chemicals. Our Sanitization experts will arrive at your doorstep at your scheduled time in fully dressed PPE kits equipped with necessary gear to make your experience hassle free and seamless!
           </p>
         </Col>
       </Row>
@@ -63,22 +60,20 @@ const Drone = () => {
       <br />
       <br />
       <br />
-      <h2 style={{ color: "#fcb001", textAlign: "center" }}>
-        The Standard Lorem
-        <br />
-        Ipsum Passage
+      <h2 style={{ color: "#fcb001", textAlign: "center", textTransform:"capitalize", fontSize:"30px"}}>
+      Did you know that a drone can service a piece of land 20<br/>times faster than the manual labor at half the cost?
       </h2>
-      <p style={{ textAlign: "center" }}>
+      {/* <p style={{ textAlign: "center" }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit
         <br />
         sed do eiusmod tempor incididunt ut labore et dolore
         <br />
         magna aliqua
-      </p>
+      </p> */}
       <br />
       <br />
       <br />
-      <Carousel responsive={responsive}>
+      {/* <Carousel responsive={responsive}>
         <div style={{ padding: "2%" }}>
           <Card style={{ borderRadius: "20px", border: "1px solid #fbc001" }}>
             <CardBody
@@ -103,7 +98,6 @@ const Drone = () => {
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo
             </CardBody>
-            {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
         </div>
 
@@ -131,7 +125,6 @@ const Drone = () => {
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo
             </CardBody>
-            {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
         </div>
         <div style={{ padding: "2%" }}>
@@ -158,7 +151,6 @@ const Drone = () => {
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo
             </CardBody>
-            {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
         </div>
         <div style={{ padding: "2%" }}>
@@ -185,7 +177,6 @@ const Drone = () => {
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo
             </CardBody>
-            {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
         </div>
         <div style={{ padding: "2%" }}>
@@ -212,17 +203,14 @@ const Drone = () => {
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo
             </CardBody>
-            {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
         </div>
-        {/* <div style={{padding:"2%"}}>
-          <Card style={{borderRadius:"20px", border:"1px solid #fbc001"}}>
-            <CardHeader style={{border:"none"}}>Header</CardHeader>
-            <CardBody style={{border:"none"}}>Body</CardBody>
-            <CardFooter style={{border:"none"}}>Footer</CardFooter>
-          </Card>
-        </div> */}
-      </Carousel>
+      </Carousel> */}
+      <Contact
+        title={ContactContent.title}
+        content={ContactContent.text}
+        id="contact"
+      />
       <br />
       <br />
       <br />

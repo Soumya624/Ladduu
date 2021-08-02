@@ -45,7 +45,7 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="village.png"
+        icon="Village.png"
         id="about"
       />
       {/* <ContentBlock

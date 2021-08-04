@@ -1,7 +1,15 @@
 {
   "title": "Welcome to Ladduu!",
-  "text": "LADDUU is an organization committed to revolutionize how people consume content, communicate thoughts and transact for goods/services in a rural and semi-urban setup. Presenting the first Virtual Village - Data, Trade and Community - all in one place!",
+  "text": "LADDUU is an organization committed to revolutionize how people consume content, communicate thoughts and transact for goods/services in a rural and semi-urban setup.",
   "color": "#fcb001",
+  "section1": [
+    {
+      "title": null,
+      "content": null,
+      "icon": null,
+      "href": null
+    }
+  ],
   "button": [
     {
       "title": "Explore",

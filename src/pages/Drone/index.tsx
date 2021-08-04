@@ -10,6 +10,7 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import { SvgIcon } from "../../common/SvgIcon";
+import { Button as Button1 } from "../../common/Button";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -48,7 +49,7 @@ const Drone = () => {
           <SvgIcon src="drone.png" width="100%" height="100%" />
         </Col>
         <Col lg={11} md={11} sm={12} xs={24}>
-          <p style={{ textTransform: "capitalize" }}>
+          <p style={{  }}>
             <br />
             Our goal is to keep your home/office safe from coronavirus and other germs by using VHA certified disinfectant chemicals. Our Sanitization experts will arrive at your doorstep at your scheduled time in fully dressed PPE kits equipped with necessary gear to make your experience hassle free and seamless!
           </p>
@@ -211,9 +212,15 @@ const Drone = () => {
         content={ContactContent.text}
         id="contact"
       />
-      <br />
-      <br />
-      <br />
+      <div style={{ textAlign: "center", fontSize: "20px", color: "#2f377c" }}>
+        For bookings or any kind of queries
+        <a href="tel:+919490780799" style={{ marginLeft: "1%" }}>
+          <Button1>Call Here</Button1>
+        </a>
+        <br />
+        <br />
+        <br />
+      </div>
     </Container>
   );
 };

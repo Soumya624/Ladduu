@@ -10,6 +10,7 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import { SvgIcon } from "../../common/SvgIcon";
+import { Button as Button1 } from "../../common/Button";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -48,9 +49,9 @@ const Sanitation = () => {
           <SvgIcon src="Sanitation2.png" width="100%" height="100%" />
         </Col>
         <Col lg={11} md={11} sm={12} xs={24}>
-          <p style={{ textTransform: "capitalize" }}>
+          <p style={{  }}>
             <br />
-            Ladduu provides the best price package for cleaning and disinfecting your Home or Office Space. We are bringing hospital level disinfection services in your area to your doorstep
+            Ladduu provides the best price package for cleaning and disinfecting your Home or Office Space. We are bringing hospital level disinfection services in your area to your doorstep.
           </p>
         </Col>
       </Row>
@@ -90,31 +91,6 @@ const Sanitation = () => {
                 Main Services
               </p>
               Our experts will use a combination of spraying pump and manual cleaning best suited for the surface. Our products have no ill effects and are safe for people with lung issues.
-            </CardBody>
-            {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
-          </Card>
-        </div>
-
-        <div style={{ padding: "2%" }}>
-          <Card style={{ borderRadius: "20px", border: "1px solid #fbc001" }}>
-            <CardBody
-              style={{
-                border: "none",
-                textTransform: "capitalize",
-                color: "#2f377c",
-                textAlign: "center",
-              }}
-            >
-              <p
-                style={{
-                  color: "#fcb001",
-                  textAlign: "center",
-                  fontSize: "25px",
-                }}
-              >
-                Fumigation Services
-              </p>
-              Fogging and cleaning the air that guarantees 99.99% pathogen free surfaces and air. We recommend this service for covid recovered individual's homes and offices.
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
@@ -188,16 +164,14 @@ const Sanitation = () => {
                   fontSize: "25px",
                 }}
               >
-                Lorem Ipsum
+                Fumigation Services
               </p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo
+              Fogging and cleaning the air that guarantees 99.99% pathogen free surfaces and air. We recommend this service for covid recovered individual's homes and offices.
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
         </div>
+        
         {/* <div style={{padding:"2%"}}>
           <Card style={{borderRadius:"20px", border:"1px solid #fbc001"}}>
             <CardHeader style={{border:"none"}}>Header</CardHeader>
@@ -209,6 +183,16 @@ const Sanitation = () => {
       <br />
       <br />
       <br />
+      <br />
+      <div style={{ textAlign: "center", fontSize: "20px", color: "#2f377c" }}>
+        For bookings or any kind of queries
+        <a href="tel:+919490780799" style={{ marginLeft: "1%" }}>
+          <Button1>Call Here</Button1>
+        </a>
+        <br />
+        <br />
+        <br />
+      </div>
     </Container>
   );
 };

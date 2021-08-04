@@ -21,6 +21,7 @@ const RightBlock = ({
   icon,
   t,
   section,
+  section1,
   id,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
@@ -43,10 +44,85 @@ const RightBlock = ({
                     section.map((item: any, id: number) => {
                       return (
                         <Col key={id} span={11}>
-                          <SvgIcon src={item.icon} width="60px" height="60px" />
-                          <MinTitle>{t(item.title)}</MinTitle>
-                          <MinPara>{t(item.content)}</MinPara>
-                          <MinPara><a href={t(item.href)}>Learn More</a></MinPara>
+                          <div
+                            style={{
+                              display: item.icon === null ? "none" : "block",
+                            }}
+                          >
+                            <SvgIcon
+                              src={item.icon}
+                              width="60px"
+                              height="60px"
+                            />
+                          </div>
+                          <div
+                            style={{
+                              display: item.title === null ? "none" : "block",
+                            }}
+                          >
+                            <MinTitle>{t(item.title)}</MinTitle>
+                          </div>
+                          <div
+                            style={{
+                              display: item.content === null ? "none" : "block",
+                            }}
+                          >
+                            <MinPara>{t(item.content)}</MinPara>
+                          </div>
+                          <div
+                            style={{
+                              display: item.href === null ? "none" : "block",
+                            }}
+                          >
+                            <MinPara>
+                              <a href={t(item.href)}>Learn More</a>
+                            </MinPara>
+                          </div>
+                        </Col>
+                      );
+                    })}
+                </Row>
+              </ServiceWrapper>
+              <ServiceWrapper>
+              <Row justify="space-between">
+                  {typeof section1 === "object" &&
+                    section1.map((item: any, id: number) => {
+                      return (
+                        <Col key={id} span={24}>
+                          <div
+                            style={{
+                              display: item.icon === null ? "none" : "block",
+                            }}
+                          >
+                            <SvgIcon
+                              src={item.icon}
+                              width="60px"
+                              height="60px"
+                            />
+                          </div>
+                          <div
+                            style={{
+                              display: item.title === null ? "none" : "block",
+                            }}
+                          >
+                            <MinTitle>{t(item.title)}</MinTitle>
+                          </div>
+                          <div
+                            style={{
+                              display: item.content === null ? "block" : "block",
+                            }}
+                          >
+                            <p>Presenting the first Virtual Village - <b>Data</b>, <b>Trade</b> and <b>Community</b> - all in one place!</p>
+                          </div>
+                          <div
+                            style={{
+                              display: item.href === null ? "none" : "block",
+                            }}
+                          >
+                            <MinPara>
+                              <a href={t(item.href)}>Learn More</a>
+                            </MinPara>
+                          </div>
                         </Col>
                       );
                     })}

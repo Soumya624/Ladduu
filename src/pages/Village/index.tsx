@@ -10,6 +10,7 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import { SvgIcon } from "../../common/SvgIcon";
+import { Button as Button1 } from "../../common/Button";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -45,10 +46,10 @@ const Village = () => {
       <br />
       <Row justify="space-between" align="middle">
         <Col lg={11} md={11} sm={12} xs={24}>
-          <SvgIcon src="Village.png" width="100%" height="100%" />
+          <SvgIcon src="vv (2).png" width="100%" height="100%" />
         </Col>
         <Col lg={11} md={11} sm={12} xs={24}>
-          <p style={{ textTransform: "capitalize" }}>
+          <p style={{ }}>
             <br />
               Technology penetration isn’t as rampant in rural and semi-urban areas due to limited infrastructure, language barriers and other cultural differences. We, at Ladduu want to break those barriers and make lives of rural communities simpler by leveraging technology and facilitating scalable operations!
           </p>
@@ -64,7 +65,7 @@ const Village = () => {
         make informed decisions using<br/>our 360-view platform
       </h2>
       <p style={{ textAlign: "center" }}>
-      We aim to empower and enable the most populous strata of the Indian society (rural & semi-urban dwellers) to make informed decisions using our 360-view platform, communicate ideas and establish connections via our<br/>user-friendly community and transact digitally for their goods and services on our dynamic marketplace!
+      We aim to empower and enable the most populous strata of the Indian society (rural & semi-urban dwellers) to make informed decisions using our 360-view platform, communicate ideas and establish connections via our user-friendly community and transact digitally for their goods and services on our dynamic marketplace!
       </p>
       <br />
       <br />
@@ -138,7 +139,7 @@ const Village = () => {
               >
                 Healthcare
               </p>
-              Information about local Healthcare Providers like clinics, hospitals, doctors etc.
+              Information about local Healthcare Providers like clinics, hospitals, doctors
             </CardBody>
             {/* <CardFooter style={{border:"none"}}>Footer</CardFooter> */}
           </Card>
@@ -202,6 +203,16 @@ const Village = () => {
       <br />
       <br />
       <br />
+      <br />
+      <div style={{ textAlign: "center", fontSize: "20px", color: "#2f377c" }}>
+        For bookings or any kind of queries
+        <a href="tel:+919490780799" style={{ marginLeft: "1%" }}>
+          <Button1>Call Here</Button1>
+        </a>
+        <br />
+        <br />
+        <br />
+      </div>
     </Container>
   );
 };

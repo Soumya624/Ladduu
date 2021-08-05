@@ -96,10 +96,10 @@ const Header = ({ t }: any) => {
           </Span>
         </CustomNavLinkSmall>
 
-        <CustomNavLinkSmall style={{color:"white"}}>
+        {/* <CustomNavLinkSmall style={{color:"white"}}>
           Language
         <Select options={options}   defaultValue={options[0]} />
-        </CustomNavLinkSmall>
+        </CustomNavLinkSmall> */}
       </>
     );
   };

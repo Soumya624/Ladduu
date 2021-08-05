@@ -213,9 +213,14 @@ const Drone = () => {
       />
       <div style={{ textAlign: "center", fontSize: "20px", color: "#2f377c" }}>
         For bookings or any kind of queries
-        <a href="tel:+919490780799" style={{ marginLeft: "1%" }}>
-          <Button1>Call Here</Button1>
+        <a href="tel:+919490780799" style={{ margin: "0 1%", fontFamily:"sans-serif" }}>
+          Call
         </a>
+        or
+        <a href="https://wa.me/919490780799" style={{ margin: "0 1%", fontFamily:"sans-serif" }}>
+          Whatsapp
+        </a>
+        at +91-949780799
         <br />
         <br />
         <br />

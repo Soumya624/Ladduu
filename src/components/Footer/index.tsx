@@ -110,7 +110,7 @@ const Footer = ({ t }: any) => {
               <a href="/terms" style={{color: "#442e70"}}>
                 {t("Terms and Conditions")}
               </a><br/><br/>
-              <LanguageSwitchContainer>
+              {/* <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
                   <SvgIcon
                     src="uk.png"
@@ -127,7 +127,7 @@ const Footer = ({ t }: any) => {
                     height="30px"
                   />
                 </LanguageSwitch>
-              </LanguageSwitchContainer>
+              </LanguageSwitchContainer> */}
             </Col>
           </Row>
         </Container>

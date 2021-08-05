@@ -66,7 +66,7 @@ const Home = () => {
         title={ProductContent.title}
         content={ProductContent.text}
         section={ProductContent.section}
-        icon="drone.png"
+        icon="rural.png"
         id="product"
       />
       <Contact

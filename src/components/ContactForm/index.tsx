@@ -1,4 +1,5 @@
 import { Row, Col } from "antd";
+import { useState } from "react";
 import { withTranslation } from "react-i18next";
 import { Slide, Zoom } from "react-awesome-reveal";
 import { ContactProps, ValidationTypeProps } from "./types";
@@ -9,12 +10,16 @@ import Block from "../Block";
 import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
+import axios from 'axios';
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(
     validate
   ) as any;
 
+  const [text, setText] = useState("");
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
   const ValidationType = ({ type }: ValidationTypeProps) => {
     const ErrorMessage = errors[type];
     return (
@@ -40,32 +45,55 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   type="text"
                   name="name"
                   placeholder="Your Name"
-                  value={values.name || ""}
-                  onChange={handleChange}
+                  onChange={(e) => {
+                    setName(e.target.value);
+                    console.log(e.target.value);
+                    console.log(name);
+                  }}
+                  value={name}
                 />
-                <ValidationType type="name" />
+                {/* <ValidationType type="name" /> */}
               </Col>
               <Col span={24}>
                 <Input
                   type="text"
                   name="email"
                   placeholder="Your Email"
-                  value={values.email || ""}
-                  onChange={handleChange}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    console.log(e.target.value);
+                    console.log(email);
+                  }}
+                  value={email}
                 />
-                <ValidationType type="email" />
+                {/* <ValidationType type="email" /> */}
               </Col>
               <Col span={24}>
                 <TextArea
                   placeholder="Your Message"
-                  value={values.message || ""}
-                  name="Service Name and Description"
-                  onChange={handleChange}
+                  name="Description"
+                  type="text"
+                  onChange={(e) => {
+                    setText(e.target.value);
+                    console.log(e.target.value);
+                    console.log(text);
+                  }}
+                  value={text}
                 />
-                <ValidationType type="message" />
+                {/* <ValidationType type="message" /> */}
               </Col>
               <ButtonContainer>
-                <Button name="submit">{t("Submit")}</Button>
+                <Button name="submit" onClick={()=>{
+                  // console.log(name);
+                  // console.log(email);
+                  // console.log(text);
+                  let formData= new FormData();
+                  formData.append("text", text);
+                  const url= "https://formsubmit.co/ajax/support@ladduu.com";
+                  axios.post(url,formData)
+                  .then(res=> console.log(res.data))
+                  .catch(err=> console.log(err));  
+                }}>{t("Submit")}</Button>
               </ButtonContainer>
             </FormGroup>
           </Slide>

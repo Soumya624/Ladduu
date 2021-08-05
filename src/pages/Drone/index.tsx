@@ -50,8 +50,7 @@ const Drone = () => {
         </Col>
         <Col lg={11} md={11} sm={12} xs={24}>
           <p style={{  }}>
-            <br />
-            Our goal is to keep your home/office safe from coronavirus and other germs by using VHA certified disinfectant chemicals. Our Sanitization experts will arrive at your doorstep at your scheduled time in fully dressed PPE kits equipped with necessary gear to make your experience hassle free and seamless!
+              Marginalized and vulnerable communities, especially those living in poverty, could benefit the most from the connectivity and opportunities digital technology provides. By closing the gap in digital access between rural and urban communities in India, the nation will be able to develop and progress more inclusively as a whole.
           </p>
         </Col>
       </Row>

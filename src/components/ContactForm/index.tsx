@@ -11,7 +11,7 @@ import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 import axios from 'axios';
-
+import { Alert } from 'react-bootstrap';
 const Contact = ({ title, content, id, t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(
     validate
@@ -20,6 +20,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
   const [text, setText] = useState("");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [show, setShow] = useState(false);
+  const [show1, setShow1] = useState(false);
   const ValidationType = ({ type }: ValidationTypeProps) => {
     const ErrorMessage = errors[type];
     return (
@@ -91,17 +93,25 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   }
                   const url= "https://formsubmit.co/ajax/support@ladduu.com";
                   axios.post(url,formData)
-                  .then(res=> {console.log(res.data); alert("Your Response Have Been Submitted Successfully!");})
-                  .catch(err=> console.log(err));
+                  .then(res=> {console.log(res.data); setShow(true);})
+                  .catch(err=> {console.log(err); setShow1(true);});
                   setText("");
                   setEmail("");
-                  setName("");  
+                  setName("");
                 }}>{t("Submit")}</Button>
               </ButtonContainer>
             </FormGroup>
           </Slide>
         </Col>
       </Row>
+      <br/>
+      <br/>
+      <Alert show={show} variant="success" onClose={() => setShow(false)} dismissible>
+        <Alert.Heading style={{textAlign:"center"}}>Your Response Has Been Submitted Successfully</Alert.Heading>
+      </Alert>
+      <Alert show={show1} variant="danger" onClose={() => setShow1(false)} dismissible>
+        <Alert.Heading style={{textAlign:"center"}}>Error In Fetching Your Response</Alert.Heading>
+      </Alert>
     </ContactContainer>
   );
 };

@@ -45,14 +45,15 @@ const About = () => {
       <br />
       <Row justify="space-between" align="middle">
         <Col lg={11} md={11} sm={12} xs={24}>
-          <SvgIcon src="About.png" width="100%" height="100%" />
+          <SvgIcon src="Village.png" width="100%" height="100%" />
         </Col>
         <Col lg={11} md={11} sm={12} xs={24}>
-          <p style={{ textTransform: "capitalize"}}>
+          {/* <p style={{ textTransform: "capitalize"}}> */}
+          <p>
             <br/>
             We aim to empower and enable the most populous strata of the Indian
             society (rural and semi-urban dwellers) to make informed decisions
-            using our 360-view database, communicate ideas and establish
+            using our 360⁰ database, communicate ideas and establish
             connections via our user-friendly community and transact digitally
             for their goods and services on our dynamic marketplace.
           </p>

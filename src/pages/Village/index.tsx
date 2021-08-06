@@ -51,7 +51,7 @@ const Village = () => {
         <Col lg={11} md={11} sm={12} xs={24}>
           <p style={{ }}>
             <br />
-              Technology penetration isn’t as rampant in rural and semi-urban areas due to limited infrastructure, language barriers and other cultural differences. We, at Ladduu want to break those barriers and make lives of rural communities simpler by leveraging technology and facilitating scalable operations!
+              Technology penetration isn’t as rampant in rural and semi-urban areas due to limited infrastructure, language barriers and other cultural differences. We, at Ladduu, want to break those barriers and make lives of rural communities simpler by leveraging technology and facilitating scalable operations!
           </p>
         </Col>
       </Row>
@@ -62,10 +62,10 @@ const Village = () => {
       <br />
       <br />
       <h2 style={{ color: "#fcb001", textAlign: "center", textTransform:"capitalize" }}>
-        make informed decisions using<br/>our 360-view platform
+        make informed decisions using<br/>our 360⁰ platform
       </h2>
       <p style={{ textAlign: "center" }}>
-      We aim to empower and enable the most populous strata of the Indian society (rural & semi-urban dwellers) to make informed decisions using our 360-view platform, communicate ideas and establish connections via our user-friendly community and transact digitally for their goods and services on our dynamic marketplace!
+      We aim to empower and enable the most populous strata of the Indian society (rural & semi-urban dwellers) to make informed decisions using our 360⁰ platform, communicate ideas and establish connections via our user-friendly community and transact digitally for their goods and services on our dynamic marketplace!
       </p>
       <br />
       <br />
@@ -205,7 +205,7 @@ const Village = () => {
       <br />
       <br />
       <div style={{ textAlign: "center", fontSize: "20px", color: "#2f377c" }}>
-        For bookings or any kind of queries
+        For bookings or queries,
         <a href="tel:+919490780799" style={{ margin: "0 1%", fontFamily:"sans-serif" }}>
           Call
         </a>
@@ -213,7 +213,7 @@ const Village = () => {
         <a href="https://wa.me/919490780799" style={{ margin: "0 1%", fontFamily:"sans-serif" }}>
           Whatsapp
         </a>
-        at +91-949780799
+        at +91-9490780799
         <br />
         <br />
         <br />

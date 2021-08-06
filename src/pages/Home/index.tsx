@@ -33,11 +33,11 @@ const Home = () => {
         Rural Dwellers by 2022
       </h2>
       <p style={{ textAlign: "center", fontSize: "20px", color: "#2b3379" }}>
-        Empower small entrepreneurs to expand markets
+        • Empower small entrepreneurs to expand markets
         <br />
-        Mechanize farm procedures to reduce cost of production in agriculture
+        • Mechanize farm procedures to reduce cost of production in agriculture
         <br />
-        Digitize local information to build inclusive and future-ready
+        • Digitize local information to build inclusive and future-ready
         communities
       </p>
       {/* <MiddleBlock
@@ -75,7 +75,7 @@ const Home = () => {
         id="contact"
       />
       <div style={{ textAlign: "center", fontSize: "20px", color: "#2f377c" }}>
-        For bookings or any kind of queries
+        For bookings or queries,
         <a href="tel:+919490780799" style={{ margin: "0 1%", fontFamily:"sans-serif" }}>
           Call
         </a>
@@ -83,7 +83,7 @@ const Home = () => {
         <a href="https://wa.me/919490780799" style={{ margin: "0 1%", fontFamily:"sans-serif" }}>
           Whatsapp
         </a>
-        at +91-949780799
+        at +91-9490780799
         <br />
         <br />
         <br />

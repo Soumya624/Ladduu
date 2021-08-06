@@ -87,8 +87,13 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   // console.log(name);
                   // console.log(email);
                   // console.log(text);
-                  let formData= new FormData();
-                  formData.append("text", text);
+                  // let formData= new FormData();
+                  let formData= {
+                    "name": name,
+                    "email": email,
+                    "message": text
+                  }
+                  // console.log(formData);
                   const url= "https://formsubmit.co/ajax/support@ladduu.com";
                   axios.post(url,formData)
                   .then(res=> console.log(res.data))

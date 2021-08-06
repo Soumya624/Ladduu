@@ -47,7 +47,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   placeholder="Your Name"
                   onChange={(e) => {
                     setName(e.target.value);
-                    console.log(e.target.value);
+                    // console.log(e.target.value);
                     console.log(name);
                   }}
                   value={name}
@@ -61,7 +61,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   placeholder="Your Email"
                   onChange={(e) => {
                     setEmail(e.target.value);
-                    console.log(e.target.value);
+                    // console.log(e.target.value);
                     console.log(email);
                   }}
                   value={email}
@@ -75,7 +75,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   type="text"
                   onChange={(e) => {
                     setText(e.target.value);
-                    console.log(e.target.value);
+                    // console.log(e.target.value);
                     console.log(text);
                   }}
                   value={text}
@@ -84,20 +84,18 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <ButtonContainer>
                 <Button name="submit" onClick={()=>{
-                  // console.log(name);
-                  // console.log(email);
-                  // console.log(text);
-                  // let formData= new FormData();
                   let formData= {
                     "name": name,
                     "email": email,
                     "message": text
                   }
-                  // console.log(formData);
                   const url= "https://formsubmit.co/ajax/support@ladduu.com";
                   axios.post(url,formData)
-                  .then(res=> console.log(res.data))
-                  .catch(err=> console.log(err));  
+                  .then(res=> {console.log(res.data); alert("Your Response Have Been Submitted Successfully!");})
+                  .catch(err=> console.log(err));
+                  setText("");
+                  setEmail("");
+                  setName("");  
                 }}>{t("Submit")}</Button>
               </ButtonContainer>
             </FormGroup>

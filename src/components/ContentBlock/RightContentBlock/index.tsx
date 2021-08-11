@@ -112,7 +112,7 @@ const RightBlock = ({
                               display: item.content === null ? "block" : "block",
                             }}
                           >
-                            <p>Presenting the first Virtual Village - <b>Data</b>, <b>Trade</b> and <b>Community</b> - all in one place!</p>
+                            <p>Presenting the first <b style={{fontWeight:"normal", color:"#fcb001"}}>Virtual Village</b> - <b style={{fontWeight:"normal", color:"#fcb001"}}>Data</b>, <b style={{fontWeight:"normal", color:"#fcb001"}}>Trade</b> and <b style={{fontWeight:"normal", color:"#fcb001"}}>Community</b> - all in one place!</p>
                           </div>
                           <div
                             style={{

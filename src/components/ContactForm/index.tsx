@@ -12,6 +12,7 @@ import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 import axios from 'axios';
 import { Alert } from 'react-bootstrap';
+import { Spinner } from 'react-bootstrap';
 const Contact = ({ title, content, id, t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(
     validate
@@ -22,6 +23,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
   const [name, setName] = useState("");
   const [show, setShow] = useState(false);
   const [show1, setShow1] = useState(false);
+  const [show2, setShow2] = useState(false);
   const ValidationType = ({ type }: ValidationTypeProps) => {
     const ErrorMessage = errors[type];
     return (
@@ -91,9 +93,10 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                     "email": email,
                     "message": text
                   }
-                  const url= "https://formsubmit.co/ajax/support@ladduu.com";
+                  setShow2(true);
+                  const url= "https://formsubmit.co/ajax/soumyatarafder624@gmail.com";
                   axios.post(url,formData)
-                  .then(res=> {console.log(res.data); setShow(true);})
+                  .then(res=> {console.log(res.data); setShow(true); setShow2(false);})
                   .catch(err=> {console.log(err); setShow1(true);});
                   setText("");
                   setEmail("");
@@ -106,6 +109,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
       </Row>
       <br/>
       <br/>
+      <Spinner animation="border" variant="warning" style={{marginLeft:"46.5%", alignItems:"center", textAlign:"center", display: show2 ? "block":"none"}}/>
       <Alert show={show} variant="success" onClose={() => setShow(false)} dismissible>
         <Alert.Heading style={{textAlign:"center"}}>Your Response Has Been Submitted Successfully</Alert.Heading>
       </Alert>

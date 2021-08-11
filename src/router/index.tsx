@@ -9,7 +9,7 @@ const Router = () => {
   return (
     <Suspense fallback={null}>
       <Styles />
-      <Header />
+      <Header style={{position:"fixed"}}/>
       <Switch>
         {routes.map((routeItem) => {
           return (

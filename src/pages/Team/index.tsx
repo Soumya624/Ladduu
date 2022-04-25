@@ -1,22 +1,22 @@
 import { useState } from "react";
 import { lazy } from "react";
-import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
-import AboutContent from "../../content/AboutContent.json";
-import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
-import ContactContent from "../../content/ContactContent.json";
+// import IntroContent from "../../content/IntroContent.json";
+// import MiddleBlockContent from "../../content/MiddleBlockContent.json";
+// import AboutContent from "../../content/AboutContent.json";
+// import MissionContent from "../../content/MissionContent.json";
+// import ProductContent from "../../content/ProductContent.json";
+// import ContactContent from "../../content/ContactContent.json";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import { Row, Col } from "antd";
-import { Card, CardHeader, CardBody, CardFooter } from "react-simple-card";
+import { Card, CardBody } from "react-simple-card";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
-const Contact = lazy(() => import("../../components/ContactForm"));
-const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
-const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
-const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+// const Contact = lazy(() => import("../../components/ContactForm"));
+// const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
+// const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
+// const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
 const Team = () => {
   const [open, setOpen] = useState(false);
@@ -56,7 +56,9 @@ const Team = () => {
         <Col lg={11} md={11} sm={12} xs={24}>
           <p style={{ textTransform: "capitalize" }}>
             <br />
-            We are a bunch of free spirited professionals inspired by the untapped potential of rural markets and committed to empowering the underrepresented through our common love and belief in technology.
+            We are a bunch of free spirited professionals inspired by the
+            untapped potential of rural markets and committed to empowering the
+            underrepresented through our common love and belief in technology.
           </p>
         </Col>
       </Row>
@@ -78,7 +80,11 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <img src="y1.jpg" alt="" style={{borderRadius:"50%", width:"50%"}}/>
+                <img
+                  src="y1.jpg"
+                  alt=""
+                  style={{ borderRadius: "50%", width: "50%" }}
+                />
                 <br />
                 <br />
                 <p
@@ -120,7 +126,17 @@ const Team = () => {
                       2020-2021. Radha is an avid reader, enjoys gardening and
                       designing spaces in her spare time.
                     </p>
-                    <a href="https://www.linkedin.com/in/radhajagarlamudi/" target="_blank" rel="noreferrer"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
+                    <a
+                      href="https://www.linkedin.com/in/radhajagarlamudi/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="l1.png"
+                        alt=""
+                        style={{ width: "25%", marginLeft: "37%" }}
+                      ></img>
+                    </a>
                   </div>
                 </Modal>
               </CardBody>
@@ -139,7 +155,11 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <img src="y2.jpg" alt="" style={{borderRadius:"50%", width:"50%"}}/>
+                <img
+                  src="y2.jpg"
+                  alt=""
+                  style={{ borderRadius: "50%", width: "50%" }}
+                />
                 <br />
                 <br />
                 <p
@@ -179,7 +199,17 @@ const Team = () => {
                       scanty access to resources in under-developed sections of
                       society.
                     </p>
-                    <a href="https://www.linkedin.com/in/sourya-kakarla-8b716197/" target="_blank" rel="noreferrer"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
+                    <a
+                      href="https://www.linkedin.com/in/sourya-kakarla-8b716197/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="l1.png"
+                        alt=""
+                        style={{ width: "25%", marginLeft: "37%" }}
+                      ></img>
+                    </a>
                   </div>
                 </Modal>
               </CardBody>
@@ -198,7 +228,11 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <img src="y3.png" alt="" style={{borderRadius:"50%", width:"50%"}}/>
+                <img
+                  src="y3.png"
+                  alt=""
+                  style={{ borderRadius: "50%", width: "50%" }}
+                />
                 <br />
                 <br />
                 <p
@@ -259,7 +293,17 @@ const Team = () => {
                       to design and setup state of the art engine manufacturing
                       plant in Kolhapur, Maharashtra.
                     </p>
-                    <a href="https://www.linkedin.com/in/gautam-karajgi-110ab4148/" target="_blank" rel="noreferrer"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
+                    <a
+                      href="https://www.linkedin.com/in/gautam-karajgi-110ab4148/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="l1.png"
+                        alt=""
+                        style={{ width: "25%", marginLeft: "37%" }}
+                      ></img>
+                    </a>
                   </div>
                 </Modal>
               </CardBody>
@@ -280,7 +324,11 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <img src="y4.png" alt="" style={{borderRadius:"50%", width:"50%"}}/>
+                <img
+                  src="y4.png"
+                  alt=""
+                  style={{ borderRadius: "50%", width: "50%" }}
+                />
                 <br />
                 <br />
                 <p
@@ -316,7 +364,17 @@ const Team = () => {
                       solutions for coding problems are his biggest stress
                       busters. Currently residing in Virginia, USA.
                     </p>
-                    <a href="https://www.linkedin.com/in/srikanth-nidimusili-2550301b/" target="_blank" rel="noreferrer"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
+                    <a
+                      href="https://www.linkedin.com/in/srikanth-nidimusili-2550301b/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="l1.png"
+                        alt=""
+                        style={{ width: "25%", marginLeft: "37%" }}
+                      ></img>
+                    </a>
                   </div>
                 </Modal>
               </CardBody>
@@ -335,7 +393,11 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <img src="y5.png" alt="" style={{borderRadius:"50%", width:"50%"}}/>
+                <img
+                  src="y5.png"
+                  alt=""
+                  style={{ borderRadius: "50%", width: "50%" }}
+                />
                 <br />
                 <br />
                 <p
@@ -377,7 +439,17 @@ const Team = () => {
                       can leverage her expertise to address the need of the hour
                       in the rural healthcare domain.
                     </p>
-                    <a href="https://www.linkedin.com/in/anjali-manoharan-7060771b9/" target="_blank" rel="noreferrer"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
+                    <a
+                      href="https://www.linkedin.com/in/anjali-manoharan-7060771b9/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="l1.png"
+                        alt=""
+                        style={{ width: "25%", marginLeft: "37%" }}
+                      ></img>
+                    </a>
                   </div>
                 </Modal>
               </CardBody>
@@ -396,7 +468,11 @@ const Team = () => {
                   textAlign: "center",
                 }}
               >
-                <img src="y6.png" alt="" style={{borderRadius:"50%", width:"50%"}}/>
+                <img
+                  src="y6.png"
+                  alt=""
+                  style={{ borderRadius: "50%", width: "50%" }}
+                />
                 <br />
                 <br />
                 <p
@@ -441,7 +517,17 @@ const Team = () => {
                       sports like football, badminton & cricket. He is part of
                       Samvidhan, a charitable organization.
                     </p>
-                    <a href="https://www.linkedin.com/in/akhil-roy-9639b095/" target="_blank" rel="noreferrer"><img src="l1.png" alt="" style={{width:"25%", marginLeft:"37%"}}></img></a>
+                    <a
+                      href="https://www.linkedin.com/in/akhil-roy-9639b095/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src="l1.png"
+                        alt=""
+                        style={{ width: "25%", marginLeft: "37%" }}
+                      ></img>
+                    </a>
                   </div>
                 </Modal>
               </CardBody>

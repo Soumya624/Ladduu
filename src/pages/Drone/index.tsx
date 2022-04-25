@@ -1,40 +1,40 @@
 import { lazy } from "react";
-import Carousel from "react-multi-carousel";
+// import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Row, Col } from "antd";
-import { Card, CardHeader, CardBody, CardFooter } from "react-simple-card";
-import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
-import AboutContent from "../../content/AboutContent.json";
-import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
+// import { Card, CardHeader, CardBody, CardFooter } from "react-simple-card";
+// import IntroContent from "../../content/IntroContent.json";
+// import MiddleBlockContent from "../../content/MiddleBlockContent.json";
+// import AboutContent from "../../content/AboutContent.json";
+// import MissionContent from "../../content/MissionContent.json";
+// import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import { SvgIcon } from "../../common/SvgIcon";
-import { Button as Button1 } from "../../common/Button";
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
+// import { Button as Button1 } from "../../common/Button";
+// const responsive = {
+//   superLargeDesktop: {
+//     // the naming can be any, depends on you.
+//     breakpoint: { max: 4000, min: 3000 },
+//     items: 5,
+//   },
+//   desktop: {
+//     breakpoint: { max: 3000, min: 1024 },
+//     items: 3,
+//   },
+//   tablet: {
+//     breakpoint: { max: 1024, min: 464 },
+//     items: 2,
+//   },
+//   mobile: {
+//     breakpoint: { max: 464, min: 0 },
+//     items: 1,
+//   },
+// };
 const Contact = lazy(() => import("../../components/ContactForm"));
-const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
+// const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
-const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
-const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+// const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
+// const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
 const Drone = () => {
   return (

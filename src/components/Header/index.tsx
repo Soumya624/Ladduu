@@ -4,8 +4,8 @@ import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
-import i18n from "i18next";
-import Select from 'react-select';
+// import i18n from "i18next";
+// import Select from 'react-select';
 import {
   HeaderSection,
   LogoContainer,
@@ -15,9 +15,7 @@ import {
   CustomNavLinkSmall,
   Label,
   Outline,
-  Span,
-  LanguageSwitch,
-  LanguageSwitchContainer
+  Span
 } from "./styles";
 
 const Header = ({ t }: any) => {
@@ -29,24 +27,24 @@ const Header = ({ t }: any) => {
     setVisibility(!visible);
   };
 
-  const options = [
-  { value: 'EN', label: <div > <SvgIcon
-  src="uk.png"
-  aria-label="homepage"
-  width="30px"
-  height="30px"
-/></div> },
-  { value: 'TEL', label: <div> <SvgIcon
-  src="India.png"
-  aria-label="homepage"
-  width="30px"
-  height="30px"
-/></div> }
-]
+//   const options = [
+//   { value: 'EN', label: <div > <SvgIcon
+//   src="uk.png"
+//   aria-label="homepage"
+//   width="30px"
+//   height="30px"
+// /></div> },
+//   { value: 'TEL', label: <div> <SvgIcon
+//   src="India.png"
+//   aria-label="homepage"
+//   width="30px"
+//   height="30px"
+// /></div> }
+// ]
 
-  const handleChange = (language: string) => {
-    i18n.changeLanguage(language);
-  };
+  // const handleChange = (language: string) => {
+  //   i18n.changeLanguage(language);
+  // };
 
   const onClose = () => {
     setVisibility(!visible);

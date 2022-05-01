@@ -13,5 +13,5 @@ const App = () => (
     </I18nextProvider>
   </BrowserRouter>
 );
-
+debugger;
 ReactDOM.render(<App />, document.getElementById("root"));

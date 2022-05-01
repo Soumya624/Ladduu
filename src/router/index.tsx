@@ -7,23 +7,27 @@ import { Styles } from "../styles/styles";
 
 const Router = () => {
   return (
-    <Suspense fallback={null}>
-      <Styles />
-      <Header style={{position:"fixed"}}/>
-      <Switch>
-        {routes.map((routeItem) => {
-          return (
-            <Route
-              key={routeItem.component}
-              path={routeItem.path}
-              exact={routeItem.exact}
-              component={lazy(() => import(`../pages/${routeItem.component}`))}
-            />
-          );
-        })}
-      </Switch>
-      <Footer />
-    </Suspense>
+    <div>
+      <Suspense fallback={null}>
+        <Styles />
+        <Header style={{ position: "fixed" }} />
+        <Switch>
+          {routes.map((routeItem) => {
+            return (
+              <Route
+                key={routeItem.component}
+                path={routeItem.path}
+                exact={routeItem.exact}
+                component={lazy(
+                  () => import(`../pages/${routeItem.component}`)
+                )}
+              />
+            );
+          })}
+        </Switch>
+        <Footer />
+      </Suspense>
+    </div>
   );
 };
 
